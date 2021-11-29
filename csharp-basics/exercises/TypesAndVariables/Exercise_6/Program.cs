@@ -25,7 +25,6 @@ namespace Exercise_6
                 }
             }
 
-
             foreach (int digit in digits)
             {
                 sum += digit;
@@ -33,7 +32,6 @@ namespace Exercise_6
 
             Console.WriteLine();
             Console.WriteLine($"The sum of entered digits is: {sum}");
-
         }
     }
 }
