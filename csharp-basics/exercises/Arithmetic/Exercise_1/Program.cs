@@ -15,7 +15,7 @@ namespace Exercise_1
             {
                 Console.WriteLine("One of the entered numbers is 15.");
             }
-            else if (numOne + numTwo == 15 || numOne - numTwo == 15)
+            else if (numOne + numTwo == 15 || numOne - numTwo == 15 || numTwo - numOne == 15)
             {
                 Console.WriteLine("The sum or difference of entered numbers is 15.");
             }
