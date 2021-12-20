@@ -8,8 +8,6 @@ namespace Exercise8
         static void Main(string[] args)
         {
             Game();
-            
-            /*var input = Console.ReadKey();*/
 
             while (PlayAgain())
             {
