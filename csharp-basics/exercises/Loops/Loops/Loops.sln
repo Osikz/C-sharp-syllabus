@@ -13,15 +13,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4", "Exercise4\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{6E5E8B39-8CFE-4C97-88D7-6EF558EBA8E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise5", "Exercise5\Exercise5.csproj", "{3C6E4075-0C40-4EEB-8AFE-1D1CE0E4DBB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise5", "Exercise5\Exercise5.csproj", "{3C6E4075-0C40-4EEB-8AFE-1D1CE0E4DBB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{24D26D13-CDC1-4102-A291-2E6E5590A1D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{24D26D13-CDC1-4102-A291-2E6E5590A1D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piglet", "Piglet\Piglet.csproj", "{4030ECA6-3A4B-4DFE-9F88-8FCF4E18BBEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Piglet", "Piglet\Piglet.csproj", "{4030ECA6-3A4B-4DFE-9F88-8FCF4E18BBEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsciiFigure", "AsciiFigure\AsciiFigure.csproj", "{78B184B5-F592-4203-BD57-71F8E0DE476A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsciiFigure", "AsciiFigure\AsciiFigure.csproj", "{78B184B5-F592-4203-BD57-71F8E0DE476A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise9", "Exercise9\Exercise9.csproj", "{696F3BBE-E27E-4615-A31F-D01F264F7EF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise9", "Exercise9\Exercise9.csproj", "{696F3BBE-E27E-4615-A31F-D01F264F7EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise10", "Exercise10\Exercise10.csproj", "{987747BC-A499-4E38-ADDF-0A241D12D754}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{696F3BBE-E27E-4615-A31F-D01F264F7EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{696F3BBE-E27E-4615-A31F-D01F264F7EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{696F3BBE-E27E-4615-A31F-D01F264F7EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987747BC-A499-4E38-ADDF-0A241D12D754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987747BC-A499-4E38-ADDF-0A241D12D754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987747BC-A499-4E38-ADDF-0A241D12D754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987747BC-A499-4E38-ADDF-0A241D12D754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
