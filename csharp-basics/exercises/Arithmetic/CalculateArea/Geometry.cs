@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CalculateArea
 {
@@ -10,17 +6,41 @@ namespace CalculateArea
     {
         public static double AreaOfCircle(decimal radius)
         {
-            throw new NotImplementedException();
+            if (radius <= 0)
+            {
+                throw new InvalidOperationException("ERROR! Can't calculate negative values.");
+            }
+            else
+            {
+                decimal areaCircle = Math.Round((decimal)Math.PI * radius * 2, 2);
+                return (double)areaCircle;
+            }
         }
 
         public static double AreaOfRectangle(decimal length, decimal width)
         {
-            throw new NotImplementedException();
+            if (length <= 0 || width <= 0)
+            {
+                throw new InvalidOperationException("ERROR! Can't calculate negative values.");
+            }
+            else
+            {
+                decimal areaRectangle = Math.Round(length * width, 2);
+                return (double)areaRectangle;
+            }
         }
 
         public static double AreaOfTriangle(decimal ground, decimal h)
         {
-            throw new NotImplementedException();
+            if (ground <= 0 || h <= 0)
+            {
+                throw new InvalidOperationException("ERROR! Can't calculate negative values.");
+            }
+            else
+            {
+                double areaTriangle = Math.Round((double)ground * (double)h * 0.5, 2);
+                return areaTriangle;
+            }
         }
     }
 }
