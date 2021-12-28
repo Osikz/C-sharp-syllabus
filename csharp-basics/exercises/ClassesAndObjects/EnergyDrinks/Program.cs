@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EnergyDrinks
 {
@@ -13,23 +9,22 @@ namespace EnergyDrinks
         private const double PreferCitrusDrinks = 0.64;
 
         private static void Main(string[] args)
-        {
-            //fixme
-            /*
-             Console.WriteLine("Total number of people surveyed " + NumberedSurveyed);
-             Console.WriteLine("Approximately " + energyDrinkers + " bought at least one energy drink");
-             Console.WriteLine(preferCitrus + " of those " + "prefer citrus flavored energy drinks.");
-             */
+        { 
+            Console.WriteLine("Total number of people surveyed " + NumberedSurveyed);
+            Console.WriteLine("Approximately " + Math.Round(CalculateEnergyDrinkers(NumberedSurveyed))  + " bought at least one energy drink"); 
+            Console.WriteLine(Math.Round(CalculatePreferCitrus(NumberedSurveyed)) + " of those " + "prefer citrus flavored energy drinks.");
+
+            Console.ReadKey();
         }
 
-        double CalculateEnergyDrinkers(int numberSurveyed)
+        static double CalculateEnergyDrinkers(int numberSurveyed)
         {
-            throw new Exception("Sorry, no code written :(");
+            return (double)numberSurveyed * PurchasedEnergyDrinks;
         }
 
-        double CalculatePreferCitrus(int numberSurveyed)
+        static double CalculatePreferCitrus(int numberSurveyed)
         {
-            throw new Exception("Sorry, no code written :(");
+            return CalculateEnergyDrinkers(numberSurveyed) * PreferCitrusDrinks;
         }
     }
 }
