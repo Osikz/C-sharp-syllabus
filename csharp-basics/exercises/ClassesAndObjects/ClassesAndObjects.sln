@@ -19,9 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxableExample", "TaxableEx
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Exercise1\Exercise1.csproj", "{FAA53101-58F6-4279-BC06-35378B495628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "Exercise3\Exercise3.csproj", "{80D2A09B-4F96-470D-B044-A73F504249DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise3", "Exercise3\Exercise3.csproj", "{80D2A09B-4F96-470D-B044-A73F504249DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise4", "Exercise4\Exercise4.csproj", "{B9204688-4FF2-46D7-B941-ED173568B211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise4", "Exercise4\Exercise4.csproj", "{B9204688-4FF2-46D7-B941-ED173568B211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise5", "Exercise5\Exercise5.csproj", "{8099C71D-E769-40CE-B03B-4B9DE5250478}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{B9204688-4FF2-46D7-B941-ED173568B211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9204688-4FF2-46D7-B941-ED173568B211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9204688-4FF2-46D7-B941-ED173568B211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8099C71D-E769-40CE-B03B-4B9DE5250478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8099C71D-E769-40CE-B03B-4B9DE5250478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8099C71D-E769-40CE-B03B-4B9DE5250478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8099C71D-E769-40CE-B03B-4B9DE5250478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
