@@ -10,6 +10,7 @@ namespace VideoStore
     {
         private const int _countOfMovies = 3;
         private static VideoStore _videoStore = new VideoStore();
+
         private static void Main(string[] args)
         {
             while (true)
@@ -22,7 +23,7 @@ namespace VideoStore
                 Console.WriteLine("Choose 4 to list inventory");
 
                 int n = Convert.ToByte(Console.ReadLine());
-
+                
                 switch (n)
                 {
                     case 0:
