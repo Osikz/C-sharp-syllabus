@@ -13,17 +13,18 @@ namespace VideoStore
         public Video(string title)
         {
             _title = title;
+            _checkedOut = true;
             _rating = new List<double>();
         }
 
         public void BeingCheckedOut()
         { 
-            _checkedOut = true;
+            _checkedOut = false;
         }
 
         public void BeingReturned()
         {
-            _checkedOut = false;
+            _checkedOut = true;
         }
 
         public void ReceivingRating(double rating)
@@ -34,7 +35,7 @@ namespace VideoStore
 
         public double AverageRating()
         {
-            return _rating.Any() ? _rating.Average() : _rating.FirstOrDefault();
+            return Math.Round(_rating.Average(), 2);
         }
 
         public bool Available()
@@ -42,11 +43,11 @@ namespace VideoStore
             return _checkedOut;
         }
 
-        public string Title => "";
+        public string Title => _title;
 
         public override string ToString()
         {
-            return $"{Title} {AverageRating()} {Available()}";
+            return $"Title: {Title}     User Rating: {AverageRating()}     Available: {Available()}";
         }
     }
 }

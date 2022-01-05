@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace VideoStore
 {
@@ -16,7 +15,6 @@ namespace VideoStore
         public void AddVideo(string title)
         {
             _videos.Add(new Video(title));
-            
         }
         
         public void Checkout(string title)

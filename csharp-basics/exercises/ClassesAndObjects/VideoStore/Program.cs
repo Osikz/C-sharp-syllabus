@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VideoStore
 {
@@ -77,6 +73,11 @@ namespace VideoStore
         {
             Console.WriteLine("Enter movie name");
             string movieName = Console.ReadLine();
+
+            Console.WriteLine("Please rate the movie (1-5)");
+            int rating = Convert.ToInt16(Console.ReadLine());
+
+            _videoStore.TakeUsersRating(rating, movieName);
             _videoStore.ReturnVideo(movieName);
         }
     }
