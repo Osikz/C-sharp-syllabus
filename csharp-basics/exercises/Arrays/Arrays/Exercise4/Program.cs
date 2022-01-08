@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Exercise4
 {
@@ -13,18 +14,7 @@ namespace Exercise4
                 1456, 2265, 1457, 2456
             };
 
-            for (int i = 0; i < myArray.Length; i++)
-            {
-                if (myArray[i] == 1245)
-                {
-                    Console.WriteLine("Contains!");
-                    break;
-                }
-                else if (i == myArray.Length - 1)
-                {
-                    Console.WriteLine("Doesn't contain!");
-                }
-            }
+            Console.WriteLine(myArray.Contains(1254) ? "Contains!" : "Doesn't contain!");
 
             Console.ReadKey();
         }
