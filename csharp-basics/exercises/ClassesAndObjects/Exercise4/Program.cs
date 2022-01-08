@@ -32,6 +32,7 @@ namespace Exercise4
 
             Console.ReadKey();
         }
+
         public static Movie[] GetPg(Movie[] movies)
         {
             return movies.Where(movie => movie.Rating == "PG").ToArray();
