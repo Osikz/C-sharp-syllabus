@@ -18,7 +18,7 @@ namespace VideoStore
         }
 
         public void BeingCheckedOut()
-        { 
+        {
             _checkedOut = false;
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace VideoStore
 {
@@ -19,34 +20,25 @@ namespace VideoStore
         
         public void Checkout(string title)
         {
-            foreach (var video in _videos)
+            foreach (var video in _videos.Where(video => video.Title == title))
             {
-                if (video.Title == title)
-                {
-                    video.BeingCheckedOut();
-                }
+                video.BeingCheckedOut();
             }
         }
 
         public void ReturnVideo(string title)
         {
-            foreach (var video in _videos)
+            foreach (var video in _videos.Where(video => video.Title == title))
             {
-                if (video.Title == title)
-                {
-                    video.BeingReturned();
-                }
+                video.BeingReturned();
             }
         }
 
         public void TakeUsersRating(double rating, string title)
         {
-            foreach (var video in _videos)
+            foreach (var video in _videos.Where(video => video.Title == title))
             {
-                if (video.Title == title)
-                {
-                    video.ReceivingRating(rating);
-                }
+                video.ReceivingRating(rating);
             }
         }
 

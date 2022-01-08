@@ -19,7 +19,7 @@ namespace VideoStore
                 Console.WriteLine("Choose 4 to list inventory");
 
                 int n = Convert.ToByte(Console.ReadLine());
-                
+
                 switch (n)
                 {
                     case 0:
