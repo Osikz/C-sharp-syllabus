@@ -16,6 +16,7 @@ namespace Exercise9
 
             Console.ReadKey();
         }
+
         static void SwapPoints(Point p1, Point p2)
         {
             var x = p1.FirstPoint;
