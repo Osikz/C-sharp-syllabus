@@ -4,9 +4,9 @@ namespace Exercise5
 {
     internal class Date
     {
-        private int _year { get; set; }
-        private int _month { get; set; }
-        private int _day { get; set; }
+        private int _year;
+        private int _month;
+        private int _day;
 
         public Date(int day, int month, int year)
         {
