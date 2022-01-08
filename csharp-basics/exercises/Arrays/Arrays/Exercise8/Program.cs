@@ -83,10 +83,6 @@ namespace Exercise8
             {
                 return true;
             }
-            else if (input.KeyChar == 'n')
-            {
-                return false;
-            }
             else
             {
                 return false;
