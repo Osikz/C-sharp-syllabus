@@ -41,10 +41,6 @@ namespace Piglet
             {
                 return true;
             }
-            else if (input.KeyChar == 'n')
-            {
-                return false;
-            }
             else
             {
                 return false;
