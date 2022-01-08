@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PhoneBook
 {
@@ -13,12 +14,9 @@ namespace PhoneBook
         {
             if (_data.ContainsValue(number))
             {
-                foreach (var key in _data.Keys)
+                foreach (var key in _data.Keys.Where(key => _data[key] == number))
                 {
-                    if (_data[key] == number)
-                    {
-                        return key;
-                    }
+                    return key;
                 }
             }
 
