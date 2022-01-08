@@ -89,7 +89,7 @@ namespace FlightPlanner
             cityChoice = Console.ReadKey();
             var cityChoiceNum = Convert.ToInt32(cityChoice.KeyChar) - 48;
 
-            for (int i = cityChoiceNum - 1; i < cityChoiceNum; i++)
+            for (int i = cityChoiceNum; i <= cityChoiceNum; i++)
             {
                 Console.WriteLine($"\r\nYour chosen round-trip route is: {availableFlights[i]} -> {startDestination}");
             }
