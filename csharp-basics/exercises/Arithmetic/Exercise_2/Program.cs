@@ -9,7 +9,7 @@ namespace Exercise_2
             Console.WriteLine("Please enter a number:");
             int.TryParse(Console.ReadLine(), out int number);
 
-            Console.WriteLine(number % 2 == 0 ? $"{number} is Even Number" : $"{number} is Odd Number");
+            Console.WriteLine(Methods.CheckIfOdd(number) ? $"{number} is Even Number" : $"{number} is Odd Number");
             Console.WriteLine("\r\nBye!");
         }
     }
