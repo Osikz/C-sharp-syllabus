@@ -8,25 +8,45 @@ namespace Exercise1
 {
     class Program
     {
-        /**
-           * Origination:
-           * Audi -> Germany
-           * BMW -> Germany
-           * Honda -> Japan
-           * Mercedes -> Germany
-           * VolksWagen -> Germany
-           * Tesla -> USA
-           */
-
         private static void Main(string[] args)
         {
             string[] array = { "Audi", "BMW", "Honda", "Mercedes", "VolksWagen", "Mercedes", "Tesla" };
+            string[] origin = {"Germany", "Germany", "Japan", "Germany", "Germany", "Germany", "USA"};
+            
+            var list = array.ToList();
 
-            //todo - replace array with an List and print out the results
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
 
-            //todo - replace array with a HashSet and print out the results
+            Console.WriteLine();
 
-            //todo - replace array with a Dictionary (use brand as key and origination as value) and print out the results
+            var hashSet = array.ToHashSet();
+
+            foreach (var i in hashSet)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine();
+
+            var dictionary = new Dictionary<string, string>();
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (!dictionary.ContainsKey(array[i]))
+                {
+                    dictionary.Add(array[i], origin[i]);
+                }
+            }
+
+            foreach (var i in dictionary)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.ReadKey();
         }
     }
 }
