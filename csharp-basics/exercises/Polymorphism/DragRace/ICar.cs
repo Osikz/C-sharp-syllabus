@@ -2,9 +2,9 @@
 {
     public interface ICar
     {
-        public void SpeedUp();
-        public void SlowDown();
+        public int SpeedUp();
+        public int SlowDown();
         public string ShowCurrentSpeed();
-        public void StartEngine();
+        public string StartEngine();
     }
 }

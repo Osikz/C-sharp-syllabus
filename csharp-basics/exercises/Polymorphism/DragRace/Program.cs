@@ -17,7 +17,7 @@ namespace DragRace
                 {
                     if (i == 0)
                     {
-                        car.StartEngine();
+                        Console.WriteLine(car.StartEngine());
                     }
                     else if (i == 2)
                     {
