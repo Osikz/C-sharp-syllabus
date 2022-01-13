@@ -2,7 +2,7 @@
 
 namespace Exercise1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,9 +12,9 @@ namespace Exercise1
 
             Console.WriteLine("Product list:\r\n");
 
-            logitech.PrintProduct();
-            steelseries.PrintProduct();
-            zowie.PrintProduct();
+            Console.WriteLine(logitech.PrintProduct());
+            Console.WriteLine(steelseries.PrintProduct());
+            Console.WriteLine(zowie.PrintProduct());
 
             logitech.ChangeAmount(6);
             logitech.ChangePrice(79.99d);
@@ -24,9 +24,9 @@ namespace Exercise1
 
             Console.WriteLine("\r\nProduct list after changes:\r\n");
 
-            logitech.PrintProduct();
-            steelseries.PrintProduct();
-            zowie.PrintProduct();
+            Console.WriteLine(logitech.PrintProduct());
+            Console.WriteLine(steelseries.PrintProduct());
+            Console.WriteLine(zowie.PrintProduct());
 
             Console.ReadKey();
         }
