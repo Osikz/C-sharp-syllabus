@@ -64,7 +64,7 @@ namespace Hierarchy
 
                 }
 
-                animalList[index].MakeSound();
+                Console.WriteLine(animalList[index].MakeSound());
 
                 index++;
 
