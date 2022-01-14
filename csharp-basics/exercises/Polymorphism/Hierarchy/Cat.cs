@@ -18,9 +18,9 @@ namespace Hierarchy
             set => _breed = value;
         }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("Meooooow!");
+            return "Meooooow!";
         }
 
         public override int Eat(Food food)

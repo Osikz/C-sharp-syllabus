@@ -8,12 +8,8 @@ namespace GravityCalculator
         static void Main(string[] args)
         {
             double gravity = -9.81;
-            double initialVelocity = 0.0;
             double fallingTime = 10.0;
-            double initialPosition = 0.0;
-            double finalPosition = Math.Round(0.5 * gravity * Math.Pow(fallingTime, 2)
-                                              + initialVelocity * fallingTime
-                                              + initialPosition, 2);
+            double finalPosition = Methods.FinalPositionCalculator(gravity, 0.0, 0.0, fallingTime);
 
             Console.WriteLine("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
             Console.ReadKey();

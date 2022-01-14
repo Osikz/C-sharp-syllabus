@@ -11,8 +11,7 @@ namespace FlightPlanner
         private static void Main(string[] args)
         {
             var readText = File.ReadAllLines(Path);
-            var cities = new HashSet<string>();
-            var availableFlights = new List<string>();
+            var cities = Methods.AvailableCities(readText);
             var listing = 1;
 
             Console.WriteLine("What would you like to do:\r\n" +
@@ -20,17 +19,6 @@ namespace FlightPlanner
                               "To exit program, press '#'");
             var menuChoice = Console.ReadKey();
 
-            foreach (var s in readText)
-            {
-                for (int i = 0; i < s.Length; i++)
-                {
-                    if (s[i] == '-')
-                    {
-                        cities.Add(s.Remove(i).Trim());
-                    }
-                }
-            }
-            
             switch (menuChoice.KeyChar)
             {
                 case '1':
@@ -73,23 +61,15 @@ namespace FlightPlanner
                     break;
             }
 
-            listing = 1;
             Console.WriteLine("\r\nAvailable flights from chosen city:");
-            foreach (var s in readText)
-            {
-                if (s.StartsWith(startDestination))
-                {
-                    Console.WriteLine($"{listing}. {s}");
-                    listing++;
-                    availableFlights.Add(s);
-                }
-            }
+            var availableFlights = Methods.AvailableFlights(readText, startDestination);
+            
 
             Console.WriteLine("\r\nWhere would you like to fly?");
             cityChoice = Console.ReadKey();
             var cityChoiceNum = Convert.ToInt32(cityChoice.KeyChar) - 48;
 
-            for (int i = cityChoiceNum; i <= cityChoiceNum; i++)
+            for (int i = cityChoiceNum - 1; i < cityChoiceNum; i++)
             {
                 Console.WriteLine($"\r\nYour chosen round-trip route is: {availableFlights[i]} -> {startDestination}");
             }

@@ -2,7 +2,7 @@
 
 namespace Exercise5
 {
-    internal class DateTest
+    public class DateTest
     {
         static void Main(string[] args)
         {
@@ -10,9 +10,9 @@ namespace Exercise5
             var date1 = new Date(24, 12, 2021);
             var date2 = new Date(01, 01, 2022);
 
-            date.DisplayDate();
-            date1.DisplayDate();
-            date2.DisplayDate();
+            Console.WriteLine(date.DisplayDate());
+            Console.WriteLine(date1.DisplayDate());
+            Console.WriteLine(date2.DisplayDate());
 
             Console.ReadKey();
         }

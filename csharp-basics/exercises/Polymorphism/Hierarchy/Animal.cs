@@ -39,7 +39,7 @@
             set => _foodEaten = value;
         }
 
-        public abstract void MakeSound();
+        public abstract string MakeSound();
 
         public abstract int Eat(Food food);
     }

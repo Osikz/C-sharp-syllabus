@@ -2,6 +2,6 @@
 {
     public interface IBoostable
     {
-        public void UseNitrousOxideEngine();
+        public int UseNitrousOxideEngine();
     }
 }

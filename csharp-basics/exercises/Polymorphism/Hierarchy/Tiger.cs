@@ -10,9 +10,9 @@ namespace Hierarchy
             
         }
 
-        public override void MakeSound()
+        public override string MakeSound()
         {
-            Console.WriteLine("Rawwwwwr!");
+            return "Rawwwwwr!";
         }
 
         public override int Eat(Food food)
